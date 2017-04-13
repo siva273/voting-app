@@ -17,8 +17,8 @@ services:
     #volumes:
     #  - ./result:/app
     ports:
-      - "80"
-      - "5858"
+      - "50001:80"
+
     networks:
       - front-tier
       - back-tier
