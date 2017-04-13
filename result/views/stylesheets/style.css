@@ -88,6 +88,12 @@ body{
   text-transform: uppercase;
 }
 
+#choice .choice img {
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+}
+
 #choice .choice.dogs{
   color: #00cbca;
   float: right;
@@ -109,4 +115,9 @@ body{
   margin-bottom:-4px;
   width:50%;
   height:100%;
+  position: relative;
+}
+
+#background-stats div img {
+  position: absolute;
 }
