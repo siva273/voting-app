@@ -3,5 +3,4 @@ project.lock.json
 bin/
 obj/
 secrets/
-
 .idea/
