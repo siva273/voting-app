@@ -120,5 +120,10 @@ body{
 
 #background-stats div img {
   position: absolute;
-  left: 50%;
+}
+#background-stats #background-stats-1 img {
+  right: 5%;
+}
+#background-stats #background-stats-2 img {
+  left: 5%;
 }
