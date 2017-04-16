@@ -120,4 +120,5 @@ body{
 
 #background-stats div img {
   position: absolute;
+  left: 50%;
 }
