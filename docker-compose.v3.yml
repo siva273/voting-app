@@ -24,7 +24,9 @@ services:
       placement:
         constraints: [node.role == manager]
   vote:
-    image: dockersamples/examplevotingapp_vote:before
+    build:
+      context: ./vote
+      dockerfile: Dockerfile
     ports:
       - 5000:80
     networks:
@@ -38,9 +40,11 @@ services:
       restart_policy:
         condition: on-failure
   result:
-    image: dockersamples/examplevotingapp_result:before
+    build:
+      context: ./result
+      dockerfile: Dockerfile
     ports:
-      - 5001:80
+      - 80
     networks:
       - backend
     depends_on:
@@ -54,7 +58,9 @@ services:
         condition: on-failure
 
   worker:
-    image: dockersamples/examplevotingapp_worker
+    build:
+      context: ./worker
+      dockerfile: Dockerfile
     networks:
       - frontend
       - backend
@@ -73,7 +79,7 @@ services:
   visualizer:
     image: dockersamples/visualizer:stable
     ports:
-      - "8080:8080"
+      - "8080"
     stop_grace_period: 1m30s
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"

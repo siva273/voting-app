@@ -17,7 +17,7 @@ services:
     #volumes:
     #  - ./result:/app
     ports:
-      - "50001:80"
+      - "80"
 
     networks:
       - front-tier
