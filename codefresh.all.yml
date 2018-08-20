@@ -38,14 +38,14 @@ steps:
 
     # You can push the image with whatever tag you want. In our example we use CF_BRANCH, which is a variable in
     # the build process, accessible throughout the entire flow.
-    tag: '${{CF_BRANCH}}'
+    tag: '${{CF_SHORT_REVISION}}'
 
 
   push_to_registry_result:
     title: Pushing to Result Docker Registry
     type: push
     candidate: '${{build_image_result}}'
-    tag: '${{CF_BRANCH}}'
+    tag: '${{CF_SHORT_REVISION}}'
 
 
   push_to_registry_worker:
