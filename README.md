@@ -61,7 +61,7 @@ If you want to create on build for all the services you can just add one service
 
 ## About Containers 101
 
-[Containers 101](https://www.meetup.com/Containers-101-meetup/) is online/offline meetup group based in Mountain View that provides guides and helps developers work with Containers. Created by [Codefresh](https://codefresh.io/) which provides environments for every commit, Docker CI and CD, and an embedded registry. 
+[Containers 101](https://www.meetup.com/Containers-101-meetup/) is online/offline meetup group based in Mountain View that provides guides and helps developers work with Containers. Created by [Codefresh](https://codefresh.io/) which provides environments for every commit, Docker CI and CD, and an embedded registry
 
 [Join Containers 101](https://www.meetup.com/Containers-101-meetup/)
 Learn more about [Codefresh](https://codefresh.io/)
