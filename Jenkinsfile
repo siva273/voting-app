@@ -1,10 +1,15 @@
 pipeline {
-  agent any
-  stages {
-    stage('build') {
-      steps {
-        sh 'docker build -t vote vote/Dockerfile'
-      }
+    agent {
+        docker {
+            image 'node:8-alpine' 
+            args '-p 3000:3000' 
+        }
     }
-  }
+    stages {
+        stage('Build') { 
+            steps {
+                sh 'npm install' 
+            }
+        }
+    }
 }
