@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'docker build -t vote ./vote/Dockerfile'
+        sh 'docker build -t vote vote/Dockerfile'
       }
     }
   }
